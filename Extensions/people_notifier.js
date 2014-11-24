@@ -319,9 +319,9 @@ XKit.extensions.people_notifier = new Object({
 
 			for (var i=0;i<this.blogs.length;i++) {
 
-				m_html = m_html + 	"<li id=\"xkit-people-notifier-for---" + this.blogs[i].url + "\" data-url=\"" + this.blogs[i].url + "\" class=\"no_push xkit-people-notifier-person\">" +
-								"<img src=\"http://api.tumblr.com/v2/blog/" + this.blogs[i].url + ".tumblr.com/avatar/16\" class=\"people-notifier-avatar\">" +
-								"<a>" +
+				m_html = m_html + 	"<li id=\"xkit-people-notifier-for---" + this.blogs[i].url + "\" data-url=\"" + this.blogs[i].url + "\" class=\"no_push xkit-people-notifier-person controls_section_item\">" +
+								"<img src=\"http://api.tumblr.com/v2/blog/" + this.blogs[i].url + ".tumblr.com/avatar/32\" class=\"people-notifier-avatar\">" +
+								"<a class=\"control-item control-anchor\">" +
 									"<div class=\"hide_overflow\">" + this.blogs[i].url + "</div>";
 
 
@@ -346,7 +346,7 @@ XKit.extensions.people_notifier = new Object({
 		}
 
 
-		m_html = m_html + "<li id=\"xkit-people-notifier-new-btn\" class=\"no_push xkit-people-notifier-new\"><a class=\"members\"><div class=\"\">Add a new person</div></a></li>";
+		m_html = m_html + "<li id=\"xkit-people-notifier-new-btn\" class=\"no_push xkit-people-notifier-new\"><div class=\"small_links by-xkit\"><a>Add a new person</a></div></li>";
 
 		m_html = '<ul class="controls_section" id="xpeoplenotifier"><li class=\"section_header selected\">TRACKED BLOGS</li>' + m_html + '</ul>';
 

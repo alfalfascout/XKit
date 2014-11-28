@@ -288,8 +288,8 @@ XKit.extensions.xinbox = new Object({
 	init_inbox_search: function() {
 
 		var m_html = 	'<li class="" id="xinbox_search_li">' +
-				'<a href="#" class="customize" id="xinbox_search_button">' +
-					'<div class="hide_overflow">Search Inbox..</div>' +
+				'<a href="#" class="customize control-item control-anchor" id="xinbox_search_button">' +
+					'<div class="hide_overflow"style="margin-left: 42px;">Search Inbox..</div>' +
 				'</a>' +
 				'</li>';
 
@@ -350,7 +350,7 @@ XKit.extensions.xinbox = new Object({
 		if ($("#xinbox-search-bar").length > 0) {
 			$("#xinbox-search-bar").html(i_html);
 		} else {
-			$("#posts").before("<div id=\"xinbox-search-bar\">" + i_html + "</div>");
+			$("#posts").before("<div class=\"dashboard_options_form\" id=\"xinbox-search-bar\">" + i_html + "</div>");
 		}
 
 		$(".post").each(function() {
@@ -495,8 +495,8 @@ XKit.extensions.xinbox = new Object({
 
 		xf_html = '<ul class="controls_section" id="xinbox_sidebar">' +
 			'<li class="" id="xinbox_mass_edit_li">' +
-				'<a href="#" class="customize" id="xinbox_mass_edit_button">' +
-					'<div class="hide_overflow">Mass Edit Mode</div>' +
+				'<a href="#" class="customize control-item control-anchor" id="xinbox_mass_edit_button">' +
+					'<div class="hide_overflow" style="margin-left: 42px;">Mass Edit Mode</div>' +
 				'</a>' +
 			'</li>' +
 			'</ul>';
